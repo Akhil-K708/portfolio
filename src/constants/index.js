@@ -52,7 +52,7 @@ export const PROJECTS = [
     id: 1,
     name: "Zufeto Web Application",
     status: "Active Project",
-    link: "https://zufeto.in", // In development, so no link
+    link: "https://www.zufeto.in/",
     tech: ["React.js", "Tailwind CSS", "Razorpay"],
     description: "Independently handling the complete frontend architecture for a comprehensive B2C and B2B e-commerce platform. Implemented complex features including nearest store location logic, Razorpay integrations, Cash on Delivery (COD) workflows, and a custom B2B HTTP-based chat system."
   },
