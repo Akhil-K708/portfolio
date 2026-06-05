@@ -10,7 +10,6 @@ import Contact from './components/sections/Contact';
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
-  // Scroll to Top Logic
   useEffect(() => {
     const checkScrollTop = () => {
       if (!showScroll && window.scrollY > 400) {
@@ -27,7 +26,6 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Scroll Reveal Animation Logic
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -38,7 +36,6 @@ function App() {
       });
     }, { threshold: 0.15 });
 
-    // Wait slightly to ensure all child components are mounted
     setTimeout(() => {
       const hiddenElements = document.querySelectorAll('.animate-on-scroll');
       hiddenElements.forEach((el) => observer.observe(el));
@@ -59,7 +56,6 @@ function App() {
       </main>
       <Footer />
 
-      {/* SCROLL TO TOP BUTTON */}
       <button 
         onClick={scrollTop}
         className={`fixed bottom-8 right-8 p-3 rounded-full bg-[var(--color-copper)] text-white shadow-xl hover:bg-[#a65d1f] hover:-translate-y-1 transition-all duration-300 z-50 flex items-center justify-center ${showScroll ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
