@@ -3,25 +3,24 @@ import profilePic from '../../assets/Akhil.png';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-[var(--color-cream)] pt-[76px] pb-12 flex flex-col">
-      <div className="max-w-7xl mx-auto px-6 w-full flex-grow flex flex-col justify-start">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+    <section id="home" className="min-h-screen bg-[var(--color-cream)] pt-[76px] pb-6 flex flex-col">
+      <div className="max-w-7xl mx-auto px-6 w-full flex-grow flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-center">
           
-          <div className="flex flex-col items-start text-left order-2 lg:order-1 lg:mt-6">
+          <div className="flex flex-col items-start text-left order-2 lg:order-1 lg:mt-0">
             <p className="text-lg font-bold text-[var(--color-olive-green)] mb-2">
               Hey, I'm Kodari Akhil,
             </p>
             <h1 className="text-5xl lg:text-6xl font-black uppercase leading-[1.1] mb-4 text-[var(--color-dark-green)]">
-              UI/UX <span className="font-serif italic font-normal normal-case text-[var(--color-copper)]">&</span> <br/>
               Frontend <br/>
               Developer
             </h1>
             <p className="text-base text-[var(--color-dark-green)]/90 mb-6 max-w-md leading-relaxed font-bold">
-              Frontend Developer specializing in React.js, React Native, Next.js and TypeScript. Building scalable user-facing web applications, international e-commerce interfaces, and seamless Spring Boot integrations.
+              Frontend Developer specializing in React.js, React Native, Next.js and TypeScript. Building scalable web and mobile applications, international e-commerce platforms, and seamless API integrations.
             </p>
             
             <div className="flex flex-wrap items-center gap-3">
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[var(--color-dark-green)] text-[var(--color-cream)] px-5 py-2.5 text-sm rounded-full font-bold hover:bg-[var(--color-olive-green)] transition-all shadow-lg hover:-translate-y-1">
+              <a href="./Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[var(--color-dark-green)] text-[var(--color-cream)] px-5 py-2.5 text-sm rounded-full font-bold hover:bg-[var(--color-olive-green)] transition-all shadow-lg hover:-translate-y-1">
                 RESUME
                 <span className="bg-white text-[var(--color-dark-green)] rounded-full p-1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-3 h-3">
@@ -43,8 +42,8 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-start order-1 lg:order-2">
-            <div className="w-72 md:w-[22rem] lg:w-[28rem] h-[28rem] lg:h-[32rem] bg-[var(--color-light-tan)]/20 rounded-b-full overflow-hidden shadow-2xl relative">
+          <div className="flex justify-center items-center order-1 lg:order-2">
+            <div className="w-72 md:w-[20rem] lg:w-[25rem] h-[24rem] lg:h-[28rem] bg-[var(--color-light-tan)]/20 rounded-b-full overflow-hidden shadow-2xl relative">
               <div className="absolute inset-0 bg-[var(--color-copper)] rounded-full blur-3xl opacity-10"></div>
               <img 
                 src={profilePic} 
@@ -54,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex flex-row lg:flex-col gap-8 lg:gap-12 justify-center items-center lg:items-end order-3 lg:mt-12">
+          <div className="flex flex-row lg:flex-col gap-6 lg:gap-8 justify-center items-center lg:items-end order-3 lg:mt-0">
             <div className="text-center lg:text-right">
               <h3 className="text-5xl lg:text-6xl font-black text-[var(--color-dark-green)] mb-2">1+</h3>
               <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-olive-green)]">Years Experience</p>
@@ -71,7 +70,7 @@ const Hero = () => {
           
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 pt-6 border-t border-[var(--color-dark-green)]/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 pt-6 border-t border-[var(--color-dark-green)]/10">
           <div>
             <h4 className="font-bold text-sm uppercase mb-2 text-[var(--color-dark-green)]">React Ecosystem</h4>
             <p className="text-xs text-[var(--color-dark-green)]/70 font-medium">Building dynamic interfaces with React.js and React Native.</p>
