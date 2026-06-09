@@ -40,7 +40,7 @@ const Projects = () => {
             return (
               <div 
                 key={project.id} 
-                className={`relative md:sticky md:top-[96px] w-full h-auto md:h-[450px] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} ${bgColor} border border-black/10 group`}
+                className={`relative md:sticky md:top-[96px] w-full h-auto md:h-[540px] rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} ${bgColor} border border-black/10 group`}
               >
                 <div className="w-full md:w-[40%] h-64 md:h-full relative bg-black/10 overflow-hidden shrink-0 flex items-center justify-center p-6 md:p-8">
                    <img 
@@ -50,9 +50,23 @@ const Projects = () => {
                    />
                 </div>
                 
-                <div className="w-full md:w-[60%] p-6 md:p-14 flex flex-col justify-center">
-                  <h3 className={`text-3xl md:text-5xl font-black mb-4 md:mb-6 ${textColor}`}>{project.name}</h3>
-                  <p className={`text-sm md:text-lg mb-6 md:mb-8 leading-relaxed ${textColor}/90 font-medium`}>{project.description}</p>
+                <div className="w-full md:w-[60%] h-full p-6 md:p-12 flex flex-col justify-center">
+                  <h3 className={`text-3xl md:text-4xl font-black mb-6 ${textColor}`}>{project.name}</h3>
+                  
+                  <div className={`flex flex-col gap-4 mb-8 text-sm md:text-base leading-relaxed ${textColor} opacity-95 font-medium`}>
+                    <p>
+                      <strong className="font-black uppercase tracking-wider text-[0.7rem] md:text-xs opacity-75 block mb-0.5">Problem</strong> 
+                      {project.problem}
+                    </p>
+                    <p>
+                      <strong className="font-black uppercase tracking-wider text-[0.7rem] md:text-xs opacity-75 block mb-0.5">Built</strong> 
+                      {project.built}
+                    </p>
+                    <p>
+                      <strong className="font-black uppercase tracking-wider text-[0.7rem] md:text-xs opacity-75 block mb-0.5">Result</strong> 
+                      {project.result}
+                    </p>
+                  </div>
                   
                   <div className="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-0">
                     {project.tech.map((tech, i) => (
@@ -62,7 +76,7 @@ const Projects = () => {
                     ))}
                   </div>
                   
-                  <div className="mt-auto pt-4 border-t border-black/10">
+                  <div className="mt-auto pt-6 md:pt-4">
                     {project.link ? (
                       <a href={project.link} target="_blank" rel="noreferrer" className={`inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm md:text-base font-bold ${tagBg} ${tagText} hover:scale-105 transition-transform shadow-lg`}>
                         Visit Website
@@ -71,7 +85,7 @@ const Projects = () => {
                         </svg>
                       </a>
                     ) : (
-                      <span className={`inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm md:text-base font-bold bg-black/10 ${textColor}/70 border border-black/10 cursor-not-allowed`}>
+                      <span className={`inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full text-sm md:text-base font-bold bg-black/10 opacity-70 border border-black/10 cursor-not-allowed`}>
                         In Development
                       </span>
                     )}

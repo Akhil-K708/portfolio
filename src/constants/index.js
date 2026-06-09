@@ -54,7 +54,9 @@ export const PROJECTS = [
     status: "Active Project",
     link: "https://www.zufeto.in/",
     tech: ["React.js", "Tailwind CSS", "Razorpay"],
-    description: "Independently handling the complete frontend architecture for a comprehensive B2C and B2B e-commerce platform. Implemented complex features including nearest store location logic, Razorpay integrations, Cash on Delivery (COD) workflows, and a custom B2B HTTP-based chat system."
+    problem: "International B2B and B2C e-commerce platforms require a unified, scalable interface with complex payment/shipment workflows.",
+    built: "Engineered a comprehensive frontend architecture supporting nearest store location logic and a custom HTTP-based B2B chat system.",
+    result: "Delivered a seamless shopping experience, successfully integrating Razorpay and Cash on Delivery (COD) workflows for efficient checkout."
   },
   {
     id: 2,
@@ -62,7 +64,9 @@ export const PROJECTS = [
     status: "Completed",
     link: "https://www.ritualelements.in",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "OAuth"],
-    description: "Built an end-to-end e-commerce platform featuring a unified interface with role-based access control (RBAC) for both admins and users. Integrated OAuth login, dynamic online cart management, direct 'buy now' flows, and secure checkout processes."
+    problem: "Administrators and users needed a unified, secure platform with distinct access levels and a frictionless product browsing and checkout experience.",
+    built: "A responsive e-commerce platform featuring role-based access control (RBAC), OAuth login, and dynamic online cart management workflows.",
+    result: "Streamlined the purchasing funnel through direct 'buy now' flows and optimized deployment by successfully converting from SSR to a fully static export."
   },
   {
     id: 3,
@@ -70,7 +74,9 @@ export const PROJECTS = [
     status: "Completed",
     link: "https://app.jjrorganics.com",
     tech: ["React Native", "TypeScript", "Web", "iOS", "Android"],
-    description: "Architected and developed the core frontend across Web, Android, and iOS platforms. Established a robust, type-safe React Native codebase that successfully brought the application to near-completion before handover for final client customizations."
+    problem: "The client required a consistent, high-performance application available across Web, Android, and iOS without maintaining three separate UI codebases.",
+    built: "An end-to-end multi-platform application utilizing React Native and TypeScript for shared business logic, components, and custom StyleSheets.",
+    result: "Achieved complete mobile responsiveness and type safety, successfully delivering a near-complete robust architecture ready for final client customizations."
   },
   {
     id: 4,
@@ -78,7 +84,9 @@ export const PROJECTS = [
     status: "Completed",
     link: "https://techlife.anasolconsultancyservices.com",
     tech: ["React.js", "React Native", "WebSockets"],
-    description: "Developed a robust real-time chat module supporting both group and individual messaging via WebSockets. Implemented advanced interactions including message pinning, forwarding, replying, and 'delete for me/everyone' functionalities across web and mobile platforms."
+    problem: "The platform needed an intuitive, real-time communication module synchronized seamlessly across both web and mobile devices.",
+    built: "A real-time chat module using WebSockets, supporting group/individual messaging and advanced interactions like pinning, forwarding, and replying.",
+    result: "Ensured instant message synchronization and a smooth cross-platform user experience, enhancing overall platform engagement."
   }
 ];
 
